@@ -1,0 +1,26 @@
+ul.pagination{    
+    list-style-type: none;
+    display: inline-flex;    
+    background: #ddd;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+ul.pagination li {
+    text-align: center;    
+    font-size: 16px;    
+    line-height: 30px;
+    height: 34px;
+    width: 38px;
+    padding: 3px;
+    margin: 0px;
+}
+
+ul.pagination li.active {
+    border: 2px solid #000;
+    background: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10%;
+    padding-top: 0px;
+}

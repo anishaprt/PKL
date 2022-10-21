@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams"> 
+    <title>Name of company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top pb-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/company-logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+          <div class="container">
+            <div class="row">
+                <div class="main col-sm-8">
+                  <div class="contact-page">
+                    <h1 class="post-title">Please let us know if you have any questions</h1>
+                    <div class="line"></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt optio consequuntur ducimus odit. Deleniti optio saepe unde omnis. Sapiente aliquam repellendus error id veniam totam dolores recusandae non dolorum?</p>
+                    <div class="line"></div>
+                    <form id="contactForm">
+                      <!-- Name input -->
+                      <div class="mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Name *" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                      </div>
+                      <!-- Email address input -->
+                      <div class="mb-3">
+                        <input class="form-control" id="emailAddress" type="email*" placeholder="Email Address *" data-sb-validations="required, email" />
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                      </div>
+                      <!-- Form submissions success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">Form submission successful!</div>
+                      </div>
+                      <!-- Form submissions error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+                      <!-- Message input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="contact">Leave a Message</label>
+                        <textarea class="form-control" id="contact" type="text" placeholder="" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+                      <!-- Form submit button -->
+                      <div class="d-grid">
+                        <button class="btn-main btn-lg disabled" id="submitButton" type="submit">Send message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="sidebar col-sm-4">
+                    <div class="input-group input-group-sm mb-3">
+                      <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      <div class="input-group-append">
+                        <span class="input-group-text color" id="inputGroup-sizing-sm"><i class="fas fa-search"></i></span>
+                      </div>
+                    </div>
+                    <div class="recent-post">
+                          <h3>Recent Post</h3>
+                          <ul>
+                            <li>
+                                <div class="recent-post-thumb">
+                                    <img src="img/about-helf-1.png" alt="" />
+                                </div>
+                                <div class="recent-post-content">
+                                    <h5><a href="#">Aut omnis deserunt et ratione doloribus et ullam saepe.</a></h5>
+                                </div>
+                                <div class="recent-post-meta">
+                                    <span class="time" ><i class="far fa-calendar-alt"></i> Aug 27, 2015</span>
+                                    <span class="comment"><i class="far fa-comment"></i> 10 comments</span>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="recent-post-thumb">
+                                  <img src="img/about-helf-2.png" alt="" />
+                              </div>
+                              <div class="recent-post-content">
+                                  <h5><a href="#">Aut omnis deserunt et ratione doloribus et ullam saepe.</a></h5>
+                              </div>
+                              <div class="recent-post-meta">
+                                  <span class="time" ><i class="far fa-calendar-alt"></i> Aug 27, 2015</span>
+                                  <span class="comment"><i class="far fa-comment"></i> 10 comments</span>
+                              </div>
+                          </li>
+                          <li>
+                            <div class="recent-post-thumb">
+                                <img src="img/about-helf-3.png" alt="" />
+                            </div>
+                            <div class="recent-post-content">
+                                <h5><a href="#">Aut omnis deserunt et ratione doloribus et ullam saepe.</a></h5>
+                            </div>
+                            <div class="recent-post-meta">
+                                <span class="time" ><i class="far fa-calendar-alt"></i> Aug 27, 2015</span>
+                                <span class="comment"><i class="far fa-comment"></i> 10 comments</span>
+                            </div>
+                        </li>
+                        <li>
+                          <div class="recent-post-thumb">
+                              <img src="img/about-helf-1.png" alt="" />
+                          </div>
+                          <div class="recent-post-content">
+                              <h5><a href="#">Aut omnis deserunt et ratione doloribus et ullam saepe.</a></h5>
+                          </div>
+                          <div class="recent-post-meta">
+                              <span class="time" ><i class="far fa-calendar-alt"></i> Aug 27, 2015</span>
+                              <span class="comment"><i class="far fa-comment"></i> 10 comments</span>
+                          </div>
+                      </li>
+                      </ul>
+                      <a class="btn-main" href="blog.html" target="_blank">See More</a>
+                    </div>
+                    <div class="sidebar-benefits-items py-5">
+                      <h3>Benefits</h3>
+                      <div class="sidebar-benefits-item">
+                        <div class="sidebar-benefits-item-title d-flex">
+                          <div class="icon"><img src="img/icons/asset-1.svg" alt=""></div>
+                          <p class="title">Custom/Mobile App Development & Consulting</p>
+                        </div>
+                        <div class="text-gray">
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-benefits-item">
+                        <div class="sidebar-benefits-item-title d-flex">
+                          <div class="icon"><img src="img/icons/asset-1.svg" alt=""></div>
+                          <p class="title">Custom/Mobile App Development & Consulting</p>
+                        </div>
+                        <div class="text-gray">
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                        </div>
+                      </div>
+                      <div class="sidebar-benefits-item">
+                        <div class="sidebar-benefits-item-title d-flex">
+                          <div class="icon"><img src="img/icons/asset-1.svg" alt=""></div>
+                          <p class="title">Custom/Mobile App Development & Consulting</p>
+                        </div>
+                        <div class="text-gray">
+                          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-about">
+              <div class="logo">
+                <img src="img/company-logo_white.png" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet. Hic accusantium molestiae quo dolorum dolor ut voluptas quam aut nobis doloremque. Et iusto sapiente sed assumenda iste rem dolores repellendus qui sunt qui optio provident non tempore porro aut asperiores cupiditate. 
+                </p>
+            </div>
+            <div class="footer-links">
+              <p class="title">Quiq Links</p>
+              <div class="line"></div>
+              <div class="links">
+                <a href="">FAQ</a>
+                <a href="">About us</a>
+                <a href="">Contact</a>
+              </div>
+            </div>
+            <div class="footer-last-add">
+              <p class="title">Last added</p>
+              <div class="line"></div>
+              <div class="last-add-img">
+                <div class="last-img"><img src="img/about-helf-1.png" alt=""></div>
+                <div class="last-img"><img src="img/about-helf-2.png" alt=""></div>
+                <div class="last-img"><img src="img/about-helf-3.png" alt=""></div>
+                <div class="last-img"><img src="img/about-helf-1.png" alt=""></div>
+              </div>
+            </div>
+            <div class="footer-last-tweet">
+              <p class="title">Last Tweet</p>
+              <div class="line"></div>
+              <p class="tweet">Et vero Quis et aspernatur maiores a voluptas omnis est ipsum similique. </p>
+              <p class="tweet">Aut omnis deserunt et ratione doloribus et ullam saepe ea magnam neque vel voluptas sint rem sunt aliquam!</p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright pt-4 text-muted text-center">
+          <p>&copy; 2022 YOUR-DOMAIN | Created by <a href="https://firmbee.com/use-cases/software-for-remote-teams/" title="Firmbee - A project management & recruiting software for remote teams" target="_blank">Firmbee.com</a></p>
+          <!--
+          This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+          You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+          --> 
+        </div>
+      </footer>
+    <div class="fb2022-copy">Fbee 2022 copyright</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/addshadow.js"></script>
+    <script src="js/slides.js"></script>
+</body>
+</html>
